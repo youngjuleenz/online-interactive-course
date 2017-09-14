@@ -1,0 +1,19 @@
+.margin{
+	margin-left: 140px;
+	margin-right: 25%;
+	margin-bottom: 10%;
+}
+
+.carousel-indicators>li{
+	background-color: #ccc;
+	border: 1px solid #ccc;
+}
+
+.carousel{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.pe-content>h1 {
+	margin-left: 30px;
+}

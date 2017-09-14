@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Interactive Online Learning Course</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Required css files -->
+    <link rel="stylesheet" href="css/physicaleducation.css">
+    <link rel="stylesheet" href="css/test_carousel.css">
+    <link rel="stylesheet" href="css/feedback.css"
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top custom-navbar" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">OIC Education</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="homepage.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Math</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="physicaleducation_homepage.html">P.E.</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Notification</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="content-and-side-menu">
+            <div class="side-menu">
+                <div class="side-menu-item"><a href="physicaleducation_homepage.html">Home</a></div>
+                <div class="side-menu-item"><a href="#">Announcement</a></div>
+                <div class="side-menu-item"><a href="#">Assignment</a></div>
+                <div class="side-menu-item"><a href="#">Files</a></div>
+                <div class="side-menu-item current-page"><a href="feedback.html">Feedback</a></div>
+                <div class="side-menu-item"><a href="#">Grade</a></div>
+            </div>
+
+            <div class="pe-content">
+                <h1>Feedback</h1>
+                <div class="tabbed">
+                    <div class="question question-font">
+                        <h5>Question 1:</h5>
+                        <h4>What are the benefits of muscular strength and endurance?</h4>
+                        <p> (Student's answer)</p>
+                    </div>
+
+                    <div class="question question-font">
+                        <h5>Question 2</h5>
+                        <h4>How can you improve muscular strength and endurance?</h4>
+                        <p> (Student's answer)</p>
+                    </div>
+                </div>
+
+                <div id="feedback_carousel" class="carousel" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#feedback_carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#feedback_carousel" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                        <div class="item active">
+                            <div class="feedback margin">
+                                <h3>Question 1 feedback</h3>
+                                <p>User 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="second_feedback margin">
+                                <h3>Question 2 feedback</h3>
+                                <p>User 2: Lorem ipsum</p>
+                                <p>User 3: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta sunt explicabo.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#feedback_carousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+                    <a class="right carousel-control" href="#feedback_carousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+                </div>
+
+                <hr>
+
+                <div class="submit-feedback-container">
+                    <form>
+                        <div class="submit-feedback-title">
+                            <p class="feedback-submit-message">Submit you're own feedback!</p>
+                        </div>
+                        <div class="question-select">
+                            <div class="label-container">
+                                <label>Select Question: </label>
+                            </div>
+                            <select class="submit-question" name="submit-question">
+                                <option value="1">Question 1</option>
+                                <option value="2">Question 2</option>
+                            </select>
+                        </div>
+                        <div class="name-input-box">
+                            <div class="label-container">
+                                <label>Name: </label>
+                            </div>
+                            <input class="submit-name" name="submit-name" type="text">
+                        </div>
+                        <div class="name-input-box">
+                            <div class="label-container">
+                                <label>Feedback: </label>
+                            </div>
+                            <textarea class="submit-feedback" name="submit-feedback" rows="4" cols="50"></textarea>
+                        </div>
+
+                        <div class="submit-feedback-footer">
+                            <button onclick="uponSubmit(event)">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/site.js"></script>
+
+</body>
+
+</html>

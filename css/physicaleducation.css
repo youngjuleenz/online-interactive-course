@@ -1,0 +1,124 @@
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.navbar-inverse {
+	background-color: #00457D;
+	border-color: #00457D;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.content-and-side-menu {
+	display: flex;
+}
+
+.side-menu {
+	list-style-type: none;
+	overflow: auto;
+	width: 25%;
+	background-color: #f1f1f1;
+	border-radius: 16px;
+	flex-direction: column;
+	display: flex;
+}
+
+.side-menu-item {
+	display:flex;
+	justify-content: center;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.side-menu-item:hover {
+	background-color: #555;
+	color: white;
+}
+
+.side-menu-item:hover>a {
+	color: white;
+	text-decoration:underline;
+}
+
+.side-menu-item>a {
+	color: black;
+	font-size:20px;
+	font-family: "Times New Roman";
+	padding: 8px 16px;
+}
+
+.current-page {
+	background-color: #555555
+}
+
+.current-page>a {
+	color: white;
+}
+
+hr{
+	border: 0;
+	border: 1px solid #eee;
+	margin: auto;
+	margin-top: 50px;
+	width: 80%;
+}
+
+.pe-content {
+	flex: 1;
+	height: 1000px;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 16px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pe-content>h2 {
+	margin-top: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: "Verdana";
+	line-height: 50px;
+}
+
+.pe-content>p {
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: medium;
+	line-height: 1.5;
+	font-family: "Arial";
+}
+
+.standard {
+	font-weight: bold;
+	margin-left: 50px;
+	font-family: "Arial";
+}
+
+.standard_list {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.question{
+	padding: 10px 30px;
+	margin:30px;
+	border:2px solid black;
+	border-radius:8px;
+}
+
+.circle{
+	display:inline-block;
+	height:20px;
+	width:20px;
+	border: 1px solid black;
+	border-radius:10px;
+	background:#999;
+}

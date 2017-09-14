@@ -1,0 +1,63 @@
+.current-page {
+	background-color: #555555;
+}
+
+.current-page>a {
+	color: white;
+}
+
+.pe-content>h1 {
+	font-family: "Verdana";
+}
+
+.question-font {
+	font-family: "Verdana";
+}
+
+.submit-feedback-container {
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.feedback-submit-message {
+	font-weight: 700;
+	font-size: 25px;
+	font-family: "Arial";
+}
+
+.question-select{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.label-container {
+	margin-right: 10px;
+	width: 115px;
+}
+
+label {
+	margin: 0;
+	float: right;
+}
+
+.name-input-box {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.label-container {
+	margin-right: 10px;
+	width: 115px;
+}
+
+.submit-feedback {
+	flex-grow: 1;
+}
+
+.submit-feedback-footer {
+	float: right;
+	font-size: 18px;
+}

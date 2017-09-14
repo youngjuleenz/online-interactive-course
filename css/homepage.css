@@ -1,0 +1,118 @@
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.navbar-inverse {
+	background-color: #00457D;
+	border-color: #355E91;
+}
+
+
+/*
+.custom-navbar {
+	background: #355E91;
+}
+*/
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.content-font {
+	font-family: "Arial";
+	font-size: medium;
+}
+
+.main-news-content {
+	flex: 1;
+	border: 1px solid #ccc;
+	border-radius: 16px;
+	height: 400px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: left;
+}
+
+.main-news-content>h1 {
+	font-family: "Verdana";
+}
+
+.padding {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.side-menu {
+	background-color: #f1f1f1;
+}
+
+.side-menu-item {
+	display:flex;
+	justify-content: center;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+/*
+#wrap{
+	width: 100%
+	margin: 0 auto;
+}
+*/
+
+
+.sub-news-content {
+	float: left;
+	color: #3B3738;
+	flex:1;
+	position: flex;
+	/*margin-top: 20px;*/
+	height: 100px;
+	width: 48%;
+	flex-direction: column;
+	margin-top: 20px;
+	padding-bottom: 200px;
+	text-align: left;
+}
+
+.sub-news-content>h2 {
+	font-family: "Verdana";
+}
+
+.news-content-borders{
+
+	border-radius: 16px;
+	border: 1px solid;
+	border-color: #ccc;
+}
+
+.another-sub-news-content {
+	float: right;
+	color: #3B3738;
+	border-radius: 16px;
+	border: 1px solid;
+	border-color: #ccc;
+	flex: 1;
+	position: flex;
+	margin-top: 20px;
+	text-align: left;
+
+	/*margin-left: 50%;*/
+	height: 100px;
+	width:48%;
+
+	margin-bottom: 100px;
+	padding-bottom: 200px;
+	flex-direction: column;
+}
+
+.another-sub-news-content>h2 {
+	font-family: "Verdana";
+}
+
+.side-by-side{
+	display:inline-block;
+}
